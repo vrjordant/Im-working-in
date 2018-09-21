@@ -1,5 +1,8 @@
 package Assignment2;
 
-public class ApparatusType {
-
+//There are 5 of each type
+public enum ApparatusType {
+	LEGPRESSMACHINE, BARBELL, HACKSQUATMACHINE, LEGEXTENSIONMACHINE, 
+	LEGCURLMACHINE, LATPULLDOWNMACHINE, PECKDECKMACHINE,
+	CABLECROSSOVER
 }
