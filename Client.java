@@ -23,7 +23,7 @@ public class Client {
 	 * Generates a random client with the given id
 	 */
 	public static Client generateRandom(int id, Map<WeightPlateSize, Integer> noOfWeightPlates) {
-		// TODO: Implement me!
+		// TODO: Implement me!a
 		return null;
 	}
 }
