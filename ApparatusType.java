@@ -6,3 +6,5 @@ public enum ApparatusType {
 	LEGCURLMACHINE, LATPULLDOWNMACHINE, PECKDECKMACHINE,
 	CABLECROSSOVER
 }
+
+// TODO: Possibly create methods to generate a random apparatus type

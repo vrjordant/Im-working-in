@@ -1,5 +1,6 @@
 package Assignment2;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -10,11 +11,12 @@ public class Client {
 	private List<Exercise> routine;
 	
 	public Client(int id) {
-		// TODO: Implement me!
+		this.id = id;
+		routine = new ArrayList<Exercise>();
 	}
 	
 	public void addExercise(Exercise e) {
-		// TODO: Implement me!
+		routine.add(e);
 	}
 	
 	/*
