@@ -32,4 +32,12 @@ public class Client {
 		}
 		return newGuy;
 	}
+	
+	 @Override
+	    public String toString() { 
+	        return String.format(id + " : " + routine.toString()); 
+	    } 
+	public static void main(String[] args){
+		System.out.println(Client.generateRandom(2));
+	}
 }
