@@ -10,6 +10,32 @@ public class Exercise {
 	private ApparatusType at;
 	private Map<WeightPlateSize, Integer> weight;
 	private int duration;
+	
+	public ApparatusType getAt() {
+		return at;
+	}
+
+	public void setAt(ApparatusType at) {
+		this.at = at;
+	}
+
+	public Map<WeightPlateSize, Integer> getWeight() {
+		return weight;
+	}
+
+	public void setWeight(Map<WeightPlateSize, Integer> weight) {
+		this.weight = weight;
+	}
+
+	public int getDuration() {
+		return duration;
+	}
+
+	public void setDuration(int duration) {
+		this.duration = duration;
+	}
+
+	
 
 	public Exercise(ApparatusType at, Map<WeightPlateSize, Integer> weight, int duration) {
 		// TODO: Implement me!
