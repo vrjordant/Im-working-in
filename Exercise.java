@@ -21,14 +21,25 @@ public class Exercise {
 	/**
 	 * Generates a random exercise using the plates in the argument
 	 */
-	public static Exercise generateRandom(Map<WeightPlateSize, Integer> weight) {
+	public static Exercise generateRandom() {
 		// TODO: Implement me!
 		//Generates a random apparatus generator and makes an array out of apparatus
 		ApparatusType[] apparati = ApparatusType.values();
 		Random appType = new Random();
 		//Generates a random number generator for duration
 		Random durType = new Random();
-		return new Exercise(apparati[appType.nextInt(apparati.length)],weight, durType.nextInt(5)+1 );
+		//Generates weights used 
+		Random weightType = new Random();
+		//Selects random weight plates and apply it to a hashmap
+		Map< WeightPlateSize,Integer> plates =  
+				new HashMap< WeightPlateSize,Integer>(); 
+		do {
+		plates.put(WeightPlateSize.values()[0], weightType.nextInt(11));
+		plates.put(WeightPlateSize.values()[1], weightType.nextInt(11));
+		plates.put(WeightPlateSize.values()[2], weightType.nextInt(11));
+		}while(plates.get(WeightPlateSize.SMALL_3KG)+plates.get(WeightPlateSize.MEDIUM_5KG)+plates.get(WeightPlateSize.LARGE_10KG)==0);
+		
+		return new Exercise(apparati[appType.nextInt(apparati.length)],plates, durType.nextInt(5)+1 );
 	}
 	 @Override
 	    public String toString() { 
@@ -45,10 +56,6 @@ public class Exercise {
 	// They probably have to get out of the apparatus too
 
 	public static void main(String[] args){
-		Map< WeightPlateSize,Integer> hm =  
-				new HashMap< WeightPlateSize,Integer>(); 
-		hm.put(WeightPlateSize.values()[1], new Integer(100)); 
-
-		System.out.println(generateRandom(hm));
+		System.out.println(generateRandom());
 	}
 }
