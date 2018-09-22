@@ -20,6 +20,22 @@ public class Client {
 		routine.add(e);
 	}
 	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public List<Exercise> getRoutine() {
+		return routine;
+	}
+
+	public void setRoutine(List<Exercise> routine) {
+		this.routine = routine;
+	}
+
 	/*
 	 * Generates a random client with the given id
 	 */
