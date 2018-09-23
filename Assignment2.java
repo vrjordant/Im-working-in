@@ -1,3 +1,7 @@
+/**
+ * Jordan Tantuico and Jared Hobbie
+ * I pledge my honor that I have abided by the Stevens Honor System.
+ */
 package Assignment2;
 
 /** start the simulation */
